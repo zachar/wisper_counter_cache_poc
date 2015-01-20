@@ -5,7 +5,7 @@ class PlayersTeam < ActiveRecord::Base
   belongs_to :player
   belongs_to :team
 
-  wisper_counter_cache_attrs :player, column: :players_counter
-  wisper_counter_cache_attrs :team, column: :teams_counter
+  wisper_counter_cache_attrs :player, column: :teams_counter
+  wisper_counter_cache_attrs :team, column: :players_counter
 
 end
